@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AYPopoverController">
+            <connections>
+                <outlet property="failureIcon" destination="FdV-bx-oMB" id="mbI-Ry-iQL"/>
+                <outlet property="menuButton" destination="Cep-iv-rNS" id="ivT-gI-UgI"/>
+                <outlet property="progressBar" destination="BkQ-eq-hPF" id="aCo-iG-qkJ"/>
+                <outlet property="searchButton" destination="lgN-26-Otk" id="UZg-Va-wNG"/>
+                <outlet property="searchField" destination="7" id="9"/>
+                <outlet property="spinner" destination="ATN-7O-8vB" id="ODU-6k-Jyv"/>
+                <outlet property="status" destination="Qvp-6h-jJZ" id="BIi-fP-FY3"/>
+                <outlet property="successIcon" destination="UeE-6T-pAO" id="2p8-NB-08S"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="1">
+            <rect key="frame" x="0.0" y="3" width="300" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+            <subviews>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" id="7">
+                    <rect key="frame" x="50" y="20" width="209" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Enter your query" usesSingleLineMode="YES" bezelStyle="round" sendsWholeSearchString="YES" id="8">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="parseQuery:" target="-2" id="K9M-GB-fEt"/>
+                        <outlet property="delegate" destination="-2" id="11"/>
+                    </connections>
+                </searchField>
+                <button id="lgN-26-Otk" userLabel="Search Button">
+                    <rect key="frame" x="267" y="21" width="13" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="ReturnIcon" imagePosition="overlaps" alignment="center" enabled="NO" state="on" imageScaling="proportionallyDown" inset="2" id="OH0-s4-JtP">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="parseQuery:" target="-2" id="v9x-nU-E5b"/>
+                    </connections>
+                </button>
+                <button tag="1" id="Cep-iv-rNS" customClass="AYMenuButton">
+                    <rect key="frame" x="20" y="21" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="CogIcon" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="aH2-F1-dQX" customClass="AYMenuButtonCell">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Qvp-6h-jJZ" userLabel="Status">
+                    <rect key="frame" x="18" y="23" width="264" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Conecting..." id="sZR-Kc-qA6">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator hidden="YES" maxValue="100" style="bar" id="BkQ-eq-hPF">
+                    <rect key="frame" x="20" y="-4" width="260" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="ATN-7O-8vB">
+                    <rect key="frame" x="142" y="23" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UeE-6T-pAO" userLabel="Success Icon">
+                    <rect key="frame" x="20" y="16" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="SucessIcon" id="1YB-9S-i9e"/>
+                </imageView>
+                <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FdV-bx-oMB" userLabel="Failure Icon">
+                    <rect key="frame" x="20" y="16" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="FailureIcon" id="blo-t1-fe5"/>
+                </imageView>
+            </subviews>
+            <point key="canvasLocation" x="267" y="74"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="CogIcon" width="4.5257143974304199" height="4.5257143974304199"/>
+        <image name="FailureIcon" width="2.4296963214874268" height="2.4296963214874268"/>
+        <image name="ReturnIcon" width="2.6742856502532959" height="4.5257143974304199"/>
+        <image name="SucessIcon" width="2.4296963214874268" height="2.4296963214874268"/>
+    </resources>
+</document>

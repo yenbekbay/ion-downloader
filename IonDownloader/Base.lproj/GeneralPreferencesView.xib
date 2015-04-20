@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GeneralPreferencesViewController">
+            <connections>
+                <outlet property="applyTagsCheckbox" destination="Oii-3d-a1s" id="gIS-nL-xUe"/>
+                <outlet property="authButton" destination="3Of-nF-x1q" id="LgA-KS-pJX"/>
+                <outlet property="authLabel" destination="o6J-b5-5II" id="UEf-Au-M2e"/>
+                <outlet property="lookForMatchesCheckbox" destination="WeW-b7-b2n" id="Za0-vd-gOo"/>
+                <outlet property="matchingLabel" destination="7qb-0c-M0S" id="2Zr-KD-DlC"/>
+                <outlet property="minBitrateLabel" destination="167" id="bWB-aW-pE7"/>
+                <outlet property="minBitrateStatus" destination="182" id="8BK-5g-iwt"/>
+                <outlet property="savingDirectoryLabel" destination="RBG-uq-ts0" id="CVx-Xy-LVV"/>
+                <outlet property="savingDirectoryMenu" destination="Fuu-0j-dDH" id="F5Q-kX-YZS"/>
+                <outlet property="useWishlistCheckbox" destination="Yaa-iv-Q3t" id="sul-hR-UdE"/>
+                <outlet property="view" destination="1" id="2"/>
+                <outlet property="wishlistLabel" destination="pcJ-Qe-dGn" id="8WG-TG-lxd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" id="o6J-b5-5II">
+                    <rect key="frame" x="63" y="187" width="166" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Connect your VK account:" id="b4h-jZ-Uns">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" id="3Of-nF-x1q" userLabel="Sign in">
+                    <rect key="frame" x="229" y="177" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Sign in" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lry-HM-r7n">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="vkButtonClicked:" target="-2" id="0Ta-tX-Fzk"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="167">
+                    <rect key="frame" x="119" y="150" width="110" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Minimum quality:" id="168">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" id="179" userLabel="Slider">
+                    <rect key="frame" x="233" y="145" width="182" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="128" maxValue="320" doubleValue="320" tickMarkPosition="above" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="180"/>
+                    <connections>
+                        <binding destination="-3" name="value" keyPath="delegate.minimumBitrate" id="vlq-Ok-PiF"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="182">
+                    <rect key="frame" x="419" y="150" width="113" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="320kbps" id="183">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="RBG-uq-ts0">
+                    <rect key="frame" x="66" y="113" width="163" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Save downloaded files to:" id="0cu-En-5aw">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="uOs-80-m0c" userLabel="Saving directory">
+                    <rect key="frame" x="233" y="107" width="183" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" inset="2" id="x32-j0-aE7" userLabel="Button Cell">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="Fuu-0j-dDH">
+                            <items>
+                                <menuItem title="Downloads" id="AHm-yO-UHv" userLabel="Downloads">
+                                    <connections>
+                                        <action selector="setDefaultDirectory:" target="-2" id="1Pu-ZL-lQp"/>
+                                    </connections>
+                                </menuItem>
+                                <menuItem title="Other" id="Eg6-5W-wlH" userLabel="Other">
+                                    <connections>
+                                        <action selector="selectDirectory:" target="-2" id="4p9-Il-os7"/>
+                                    </connections>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="7qb-0c-M0S">
+                    <rect key="frame" x="163" y="76" width="66" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Matching:" id="kSf-bx-LYd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="WeW-b7-b2n">
+                    <rect key="frame" x="233" y="74" width="299" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Filter by matches" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="mEQ-nG-Z6S">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setLookForMatchesValue:" target="-2" id="Yc5-yD-kPG"/>
+                    </connections>
+                </button>
+                <button id="Oii-3d-a1s">
+                    <rect key="frame" x="233" y="55" width="299" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Apply tags and cover art" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="DaN-PJ-ecg">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setApplyTagsValue:" target="-2" id="xfG-BY-VDI"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="pcJ-Qe-dGn">
+                    <rect key="frame" x="173" y="20" width="56" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wishlist:" id="WPb-fy-ATX">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="Yaa-iv-Q3t">
+                    <rect key="frame" x="233" y="19" width="299" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Add tracks to wishlist if not found" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="lb6-tA-7t7">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setUseWishlist:" target="-2" id="bJ4-1g-qcO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="-38" y="150"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="ZRd-aY-UHK"/>
+    </objects>
+</document>

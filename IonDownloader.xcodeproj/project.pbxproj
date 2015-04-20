@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200E8C3C1A8BE363001C73EF /* AYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C3B1A8BE363001C73EF /* AYAppDelegate.m */; };
+		200E8C421A8BE392001C73EF /* AYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C411A8BE392001C73EF /* AYController.m */; };
+		200E8C451A8BE397001C73EF /* AYStatusBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C441A8BE397001C73EF /* AYStatusBarIcon.m */; };
+		200E8C481A8BE3A7001C73EF /* AYWishlistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C471A8BE3A7001C73EF /* AYWishlistController.m */; };
+		200E8C4A1A8BE3BE001C73EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200E8C491A8BE3BE001C73EF /* Images.xcassets */; };
+		200E8C541A8BE3DD001C73EF /* AYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C4F1A8BE3DD001C73EF /* AYPopoverController.m */; };
+		200E8C551A8BE3DD001C73EF /* NSTask+PTY.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C511A8BE3DD001C73EF /* NSTask+PTY.m */; };
+		200E8C561A8BE3DD001C73EF /* NSWindow+BugFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C531A8BE3DD001C73EF /* NSWindow+BugFix.m */; };
+		200E8C5F1A8BE409001C73EF /* AYMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C5C1A8BE409001C73EF /* AYMenuButton.m */; };
+		200E8C601A8BE409001C73EF /* AYMenuButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C5E1A8BE409001C73EF /* AYMenuButtonCell.m */; };
+		200E8C651A8BE417001C73EF /* VKAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C621A8BE417001C73EF /* VKAuth.m */; };
+		200E8C661A8BE417001C73EF /* VKAuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200E8C641A8BE417001C73EF /* VKAuthWindowController.m */; };
+		2051E3931A80970200A1322D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2051E3921A80970200A1322D /* Security.framework */; };
+		2051E3951A80970A00A1322D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2051E3941A80970A00A1322D /* SystemConfiguration.framework */; };
+		20786DA01A7D978500735E25 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20786D9F1A7D978500735E25 /* Python.framework */; };
+		20C960D21A8BE98F00567373 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200E8C3D1A8BE37E001C73EF /* MainMenu.xib */; };
+		20C960D31A8BE98F00567373 /* AYPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200E8C4B1A8BE3CF001C73EF /* AYPopover.xib */; };
+		20C960D41A8BE98F00567373 /* VKAuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200E8C671A8BE41F001C73EF /* VKAuthWindow.xib */; };
+		20C960D51A8BE98F00567373 /* GeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EC77B01A8BE471004B7EDB /* GeneralPreferencesView.xib */; };
+		20C960D61A8BE98F00567373 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EC77B21A8BE471004B7EDB /* MASPreferencesWindow.xib */; };
+		20C960D71A8BE98F00567373 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20EC77C41A8BE4D0004B7EDB /* Localizable.strings */; };
+		20EC77AE1A8BE46A004B7EDB /* GeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EC77AA1A8BE46A004B7EDB /* GeneralPreferencesViewController.m */; };
+		20EC77AF1A8BE46A004B7EDB /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EC77AD1A8BE46A004B7EDB /* MASPreferencesWindowController.m */; };
+		20EC77BA1A8BE49F004B7EDB /* imports.py in Resources */ = {isa = PBXBuildFile; fileRef = 20EC77B71A8BE49F004B7EDB /* imports.py */; };
+		20EC77BC1A8BE49F004B7EDB /* downloader.py in Resources */ = {isa = PBXBuildFile; fileRef = 20EC77B91A8BE49F004B7EDB /* downloader.py */; };
+		20EC77C01A8BE4B5004B7EDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EC77BE1A8BE4B5004B7EDB /* main.m */; };
+		20EC77C31A8BE4BA004B7EDB /* AYConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EC77C21A8BE4BA004B7EDB /* AYConstants.m */; };
+		20F40BAA1A81B7190048BEDD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F40BA91A81B7190048BEDD /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		200E8C3A1A8BE363001C73EF /* AYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYAppDelegate.h; path = IonDownloader/AYAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		200E8C3B1A8BE363001C73EF /* AYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYAppDelegate.m; path = IonDownloader/AYAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		200E8C3E1A8BE37E001C73EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IonDownloader/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		200E8C401A8BE392001C73EF /* AYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYController.h; path = IonDownloader/AYController.h; sourceTree = SOURCE_ROOT; };
+		200E8C411A8BE392001C73EF /* AYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYController.m; path = IonDownloader/AYController.m; sourceTree = SOURCE_ROOT; };
+		200E8C431A8BE397001C73EF /* AYStatusBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYStatusBarIcon.h; path = IonDownloader/AYStatusBarIcon.h; sourceTree = SOURCE_ROOT; };
+		200E8C441A8BE397001C73EF /* AYStatusBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYStatusBarIcon.m; path = IonDownloader/AYStatusBarIcon.m; sourceTree = SOURCE_ROOT; };
+		200E8C461A8BE3A7001C73EF /* AYWishlistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYWishlistController.h; path = IonDownloader/AYWishlistController.h; sourceTree = SOURCE_ROOT; };
+		200E8C471A8BE3A7001C73EF /* AYWishlistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYWishlistController.m; path = IonDownloader/AYWishlistController.m; sourceTree = SOURCE_ROOT; };
+		200E8C491A8BE3BE001C73EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IonDownloader/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		200E8C4C1A8BE3CF001C73EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IonDownloader/Base.lproj/AYPopover.xib; sourceTree = SOURCE_ROOT; };
+		200E8C4E1A8BE3DD001C73EF /* AYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYPopoverController.h; path = IonDownloader/AYPopoverController.h; sourceTree = SOURCE_ROOT; };
+		200E8C4F1A8BE3DD001C73EF /* AYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYPopoverController.m; path = IonDownloader/AYPopoverController.m; sourceTree = SOURCE_ROOT; };
+		200E8C501A8BE3DD001C73EF /* NSTask+PTY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTask+PTY.h"; path = "IonDownloader/NSTask+PTY.h"; sourceTree = SOURCE_ROOT; };
+		200E8C511A8BE3DD001C73EF /* NSTask+PTY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTask+PTY.m"; path = "IonDownloader/NSTask+PTY.m"; sourceTree = SOURCE_ROOT; };
+		200E8C521A8BE3DD001C73EF /* NSWindow+BugFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+BugFix.h"; path = "IonDownloader/NSWindow+BugFix.h"; sourceTree = SOURCE_ROOT; };
+		200E8C531A8BE3DD001C73EF /* NSWindow+BugFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+BugFix.m"; path = "IonDownloader/NSWindow+BugFix.m"; sourceTree = SOURCE_ROOT; };
+		200E8C5B1A8BE409001C73EF /* AYMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYMenuButton.h; path = IonDownloader/AYMenuButton.h; sourceTree = SOURCE_ROOT; };
+		200E8C5C1A8BE409001C73EF /* AYMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYMenuButton.m; path = IonDownloader/AYMenuButton.m; sourceTree = SOURCE_ROOT; };
+		200E8C5D1A8BE409001C73EF /* AYMenuButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYMenuButtonCell.h; path = IonDownloader/AYMenuButtonCell.h; sourceTree = SOURCE_ROOT; };
+		200E8C5E1A8BE409001C73EF /* AYMenuButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYMenuButtonCell.m; path = IonDownloader/AYMenuButtonCell.m; sourceTree = SOURCE_ROOT; };
+		200E8C611A8BE417001C73EF /* VKAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKAuth.h; path = IonDownloader/VKAuth.h; sourceTree = SOURCE_ROOT; };
+		200E8C621A8BE417001C73EF /* VKAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKAuth.m; path = IonDownloader/VKAuth.m; sourceTree = SOURCE_ROOT; };
+		200E8C631A8BE417001C73EF /* VKAuthWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKAuthWindowController.h; path = IonDownloader/VKAuthWindowController.h; sourceTree = SOURCE_ROOT; };
+		200E8C641A8BE417001C73EF /* VKAuthWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKAuthWindowController.m; path = IonDownloader/VKAuthWindowController.m; sourceTree = SOURCE_ROOT; };
+		200E8C681A8BE41F001C73EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IonDownloader/Base.lproj/VKAuthWindow.xib; sourceTree = SOURCE_ROOT; };
+		2034D3831A7C77D500BABAD6 /* IonDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IonDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2051E3921A80970200A1322D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2051E3941A80970A00A1322D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		20786D9F1A7D978500735E25 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		20C960CE1A8BE73E00567373 /* ru */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		20C960CF1A8BE75600567373 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AYPopover.strings; sourceTree = "<group>"; };
+		20C960D01A8BE76000567373 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/VKAuthWindow.strings; sourceTree = "<group>"; };
+		20C960D11A8BE76B00567373 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/GeneralPreferencesView.strings; sourceTree = "<group>"; };
+		20EC77A91A8BE46A004B7EDB /* GeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralPreferencesViewController.h; path = IonDownloader/GeneralPreferencesViewController.h; sourceTree = SOURCE_ROOT; };
+		20EC77AA1A8BE46A004B7EDB /* GeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralPreferencesViewController.m; path = IonDownloader/GeneralPreferencesViewController.m; sourceTree = SOURCE_ROOT; };
+		20EC77AB1A8BE46A004B7EDB /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = IonDownloader/MASPreferencesViewController.h; sourceTree = SOURCE_ROOT; };
+		20EC77AC1A8BE46A004B7EDB /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = IonDownloader/MASPreferencesWindowController.h; sourceTree = SOURCE_ROOT; };
+		20EC77AD1A8BE46A004B7EDB /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = IonDownloader/MASPreferencesWindowController.m; sourceTree = SOURCE_ROOT; };
+		20EC77B11A8BE471004B7EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IonDownloader/Base.lproj/GeneralPreferencesView.xib; sourceTree = SOURCE_ROOT; };
+		20EC77B31A8BE471004B7EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IonDownloader/Base.lproj/MASPreferencesWindow.xib; sourceTree = SOURCE_ROOT; };
+		20EC77B71A8BE49F004B7EDB /* imports.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = imports.py; path = IonDownloader/Python/imports.py; sourceTree = SOURCE_ROOT; };
+		20EC77B91A8BE49F004B7EDB /* downloader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = downloader.py; path = IonDownloader/Python/downloader.py; sourceTree = SOURCE_ROOT; };
+		20EC77BD1A8BE4B5004B7EDB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IonDownloader/Info.plist; sourceTree = SOURCE_ROOT; };
+		20EC77BE1A8BE4B5004B7EDB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IonDownloader/main.m; sourceTree = SOURCE_ROOT; };
+		20EC77C11A8BE4BA004B7EDB /* AYConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYConstants.h; path = IonDownloader/AYConstants.h; sourceTree = SOURCE_ROOT; };
+		20EC77C21A8BE4BA004B7EDB /* AYConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYConstants.m; path = IonDownloader/AYConstants.m; sourceTree = SOURCE_ROOT; };
+		20EC77C51A8BE4D0004B7EDB /* Base */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Base; path = IonDownloader/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		20F40BA91A81B7190048BEDD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2034D3801A7C77D500BABAD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F40BAA1A81B7190048BEDD /* WebKit.framework in Frameworks */,
+				2051E3951A80970A00A1322D /* SystemConfiguration.framework in Frameworks */,
+				2051E3931A80970200A1322D /* Security.framework in Frameworks */,
+				20786DA01A7D978500735E25 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2034D37A1A7C77D500BABAD6 = {
+			isa = PBXGroup;
+			children = (
+				2034D3851A7C77D500BABAD6 /* Ion Downloader */,
+				2034D3841A7C77D500BABAD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2034D3841A7C77D500BABAD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2034D3831A7C77D500BABAD6 /* IonDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2034D3851A7C77D500BABAD6 /* Ion Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				200E8C3A1A8BE363001C73EF /* AYAppDelegate.h */,
+				200E8C3B1A8BE363001C73EF /* AYAppDelegate.m */,
+				200E8C3D1A8BE37E001C73EF /* MainMenu.xib */,
+				200E8C401A8BE392001C73EF /* AYController.h */,
+				200E8C411A8BE392001C73EF /* AYController.m */,
+				200E8C431A8BE397001C73EF /* AYStatusBarIcon.h */,
+				200E8C441A8BE397001C73EF /* AYStatusBarIcon.m */,
+				200E8C461A8BE3A7001C73EF /* AYWishlistController.h */,
+				200E8C471A8BE3A7001C73EF /* AYWishlistController.m */,
+				200E8C491A8BE3BE001C73EF /* Images.xcassets */,
+				20F28F5B1A86E1F20064B0B5 /* Popover */,
+				20F28F591A86E1300064B0B5 /* Menu */,
+				2059247F1A8194C20004DE4A /* VK */,
+				2051E35F1A7F40CD00A1322D /* Preferences */,
+				205945851A7D5C450009950E /* Python */,
+				20786DB21A7D97F200735E25 /* Frameworks */,
+				2034D3861A7C77D500BABAD6 /* Supporting Files */,
+			);
+			name = "Ion Downloader";
+			path = IonDownloader;
+			sourceTree = "<group>";
+		};
+		2034D3861A7C77D500BABAD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20EC77BD1A8BE4B5004B7EDB /* Info.plist */,
+				20EC77BE1A8BE4B5004B7EDB /* main.m */,
+				20EC77C11A8BE4BA004B7EDB /* AYConstants.h */,
+				20EC77C21A8BE4BA004B7EDB /* AYConstants.m */,
+				20EC77C41A8BE4D0004B7EDB /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2051E35F1A7F40CD00A1322D /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				20EC77B01A8BE471004B7EDB /* GeneralPreferencesView.xib */,
+				20EC77A91A8BE46A004B7EDB /* GeneralPreferencesViewController.h */,
+				20EC77AA1A8BE46A004B7EDB /* GeneralPreferencesViewController.m */,
+				20EC77B21A8BE471004B7EDB /* MASPreferencesWindow.xib */,
+				20EC77AB1A8BE46A004B7EDB /* MASPreferencesViewController.h */,
+				20EC77AC1A8BE46A004B7EDB /* MASPreferencesWindowController.h */,
+				20EC77AD1A8BE46A004B7EDB /* MASPreferencesWindowController.m */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		2059247F1A8194C20004DE4A /* VK */ = {
+			isa = PBXGroup;
+			children = (
+				200E8C671A8BE41F001C73EF /* VKAuthWindow.xib */,
+				200E8C611A8BE417001C73EF /* VKAuth.h */,
+				200E8C621A8BE417001C73EF /* VKAuth.m */,
+				200E8C631A8BE417001C73EF /* VKAuthWindowController.h */,
+				200E8C641A8BE417001C73EF /* VKAuthWindowController.m */,
+			);
+			name = VK;
+			sourceTree = "<group>";
+		};
+		205945851A7D5C450009950E /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				20EC77B71A8BE49F004B7EDB /* imports.py */,
+				20EC77B91A8BE49F004B7EDB /* downloader.py */,
+			);
+			name = Python;
+			sourceTree = "<group>";
+		};
+		20786DB21A7D97F200735E25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20F40BA91A81B7190048BEDD /* WebKit.framework */,
+				2051E3941A80970A00A1322D /* SystemConfiguration.framework */,
+				2051E3921A80970200A1322D /* Security.framework */,
+				20786D9F1A7D978500735E25 /* Python.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		20F28F591A86E1300064B0B5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				200E8C5B1A8BE409001C73EF /* AYMenuButton.h */,
+				200E8C5C1A8BE409001C73EF /* AYMenuButton.m */,
+				200E8C5D1A8BE409001C73EF /* AYMenuButtonCell.h */,
+				200E8C5E1A8BE409001C73EF /* AYMenuButtonCell.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		20F28F5B1A86E1F20064B0B5 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				200E8C4B1A8BE3CF001C73EF /* AYPopover.xib */,
+				200E8C4E1A8BE3DD001C73EF /* AYPopoverController.h */,
+				200E8C4F1A8BE3DD001C73EF /* AYPopoverController.m */,
+				200E8C521A8BE3DD001C73EF /* NSWindow+BugFix.h */,
+				200E8C531A8BE3DD001C73EF /* NSWindow+BugFix.m */,
+				200E8C501A8BE3DD001C73EF /* NSTask+PTY.h */,
+				200E8C511A8BE3DD001C73EF /* NSTask+PTY.m */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2034D3821A7C77D500BABAD6 /* IonDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2034D3A01A7C77D600BABAD6 /* Build configuration list for PBXNativeTarget "IonDownloader" */;
+			buildPhases = (
+				2034D37F1A7C77D500BABAD6 /* Sources */,
+				2034D3801A7C77D500BABAD6 /* Frameworks */,
+				2034D3811A7C77D500BABAD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IonDownloader;
+			productName = IonDownloader;
+			productReference = 2034D3831A7C77D500BABAD6 /* IonDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2034D37B1A7C77D500BABAD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ayan Yenbekbay";
+				TargetAttributes = {
+					2034D3821A7C77D500BABAD6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 2034D37E1A7C77D500BABAD6 /* Build configuration list for PBXProject "IonDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 2034D37A1A7C77D500BABAD6;
+			productRefGroup = 2034D3841A7C77D500BABAD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2034D3821A7C77D500BABAD6 /* IonDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2034D3811A7C77D500BABAD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C960D21A8BE98F00567373 /* MainMenu.xib in Resources */,
+				20C960D31A8BE98F00567373 /* AYPopover.xib in Resources */,
+				20C960D41A8BE98F00567373 /* VKAuthWindow.xib in Resources */,
+				20C960D51A8BE98F00567373 /* GeneralPreferencesView.xib in Resources */,
+				20C960D61A8BE98F00567373 /* MASPreferencesWindow.xib in Resources */,
+				20C960D71A8BE98F00567373 /* Localizable.strings in Resources */,
+				200E8C4A1A8BE3BE001C73EF /* Images.xcassets in Resources */,
+				20EC77BC1A8BE49F004B7EDB /* downloader.py in Resources */,
+				20EC77BA1A8BE49F004B7EDB /* imports.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2034D37F1A7C77D500BABAD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200E8C421A8BE392001C73EF /* AYController.m in Sources */,
+				200E8C551A8BE3DD001C73EF /* NSTask+PTY.m in Sources */,
+				200E8C661A8BE417001C73EF /* VKAuthWindowController.m in Sources */,
+				200E8C601A8BE409001C73EF /* AYMenuButtonCell.m in Sources */,
+				20EC77C31A8BE4BA004B7EDB /* AYConstants.m in Sources */,
+				200E8C541A8BE3DD001C73EF /* AYPopoverController.m in Sources */,
+				20EC77C01A8BE4B5004B7EDB /* main.m in Sources */,
+				20EC77AE1A8BE46A004B7EDB /* GeneralPreferencesViewController.m in Sources */,
+				200E8C651A8BE417001C73EF /* VKAuth.m in Sources */,
+				200E8C3C1A8BE363001C73EF /* AYAppDelegate.m in Sources */,
+				200E8C5F1A8BE409001C73EF /* AYMenuButton.m in Sources */,
+				200E8C481A8BE3A7001C73EF /* AYWishlistController.m in Sources */,
+				200E8C451A8BE397001C73EF /* AYStatusBarIcon.m in Sources */,
+				20EC77AF1A8BE46A004B7EDB /* MASPreferencesWindowController.m in Sources */,
+				200E8C561A8BE3DD001C73EF /* NSWindow+BugFix.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		200E8C3D1A8BE37E001C73EF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200E8C3E1A8BE37E001C73EF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		200E8C4B1A8BE3CF001C73EF /* AYPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200E8C4C1A8BE3CF001C73EF /* Base */,
+				20C960CF1A8BE75600567373 /* ru */,
+			);
+			name = AYPopover.xib;
+			sourceTree = "<group>";
+		};
+		200E8C671A8BE41F001C73EF /* VKAuthWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200E8C681A8BE41F001C73EF /* Base */,
+				20C960D01A8BE76000567373 /* ru */,
+			);
+			name = VKAuthWindow.xib;
+			sourceTree = "<group>";
+		};
+		20EC77B01A8BE471004B7EDB /* GeneralPreferencesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20EC77B11A8BE471004B7EDB /* Base */,
+				20C960D11A8BE76B00567373 /* ru */,
+			);
+			name = GeneralPreferencesView.xib;
+			sourceTree = "<group>";
+		};
+		20EC77B21A8BE471004B7EDB /* MASPreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20EC77B31A8BE471004B7EDB /* Base */,
+			);
+			name = MASPreferencesWindow.xib;
+			sourceTree = "<group>";
+		};
+		20EC77C41A8BE4D0004B7EDB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20EC77C51A8BE4D0004B7EDB /* Base */,
+				20C960CE1A8BE73E00567373 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2034D39E1A7C77D600BABAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2034D39F1A7C77D600BABAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2034D3A11A7C77D600BABAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = IonDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = IonDownloader;
+			};
+			name = Debug;
+		};
+		2034D3A21A7C77D600BABAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = IonDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = IonDownloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2034D37E1A7C77D500BABAD6 /* Build configuration list for PBXProject "IonDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2034D39E1A7C77D600BABAD6 /* Debug */,
+				2034D39F1A7C77D600BABAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2034D3A01A7C77D600BABAD6 /* Build configuration list for PBXNativeTarget "IonDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2034D3A11A7C77D600BABAD6 /* Debug */,
+				2034D3A21A7C77D600BABAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2034D37B1A7C77D500BABAD6 /* Project object */;
+}

@@ -1,0 +1,36 @@
+
+/* Class = "NSTextFieldCell"; title = "Minimum quality:"; ObjectID = "168"; */
+"168.title" = "Минимальное качество:";
+
+/* Class = "NSTextFieldCell"; title = "320kbps"; ObjectID = "183"; */
+"183.title" = "320кбит/с";
+
+/* Class = "NSTextFieldCell"; title = "Save downloaded files to:"; ObjectID = "0cu-En-5aw"; */
+"0cu-En-5aw.title" = "Сохранять скаченные файлы:";
+
+/* Class = "NSMenuItem"; title = "Downloads"; ObjectID = "AHm-yO-UHv"; */
+"AHm-yO-UHv.title" = "Загрузки";
+
+/* Class = "NSButtonCell"; title = "Apply tags and cover art"; ObjectID = "DaN-PJ-ecg"; */
+"DaN-PJ-ecg.title" = "Применять теги и обложку";
+
+/* Class = "NSTextFieldCell"; title = "Matching:"; ObjectID = "kSf-bx-LYd"; */
+"kSf-bx-LYd.title" = "Совпадения в базе:";
+
+/* Class = "NSMenuItem"; title = "Other"; ObjectID = "Eg6-5W-wlH"; */
+"Eg6-5W-wlH.title" = "Другое";
+
+/* Class = "NSTextFieldCell"; title = "Connect your VK account:"; ObjectID = "b4h-jZ-Uns"; */
+"b4h-jZ-Uns.title" = "Подключиться через Вконтакте:";
+
+/* Class = "NSTextFieldCell"; title = "Wishlist:"; ObjectID = "WPb-fy-ATX"; */
+"WPb-fy-ATX.title" = "Вишлист:";
+
+/* Class = "NSButtonCell"; title = "Add tracks to wishlist if not found"; ObjectID = "lb6-tA-7t7"; */
+"lb6-tA-7t7.title" = "Добавлять ненайденные песни в вишлист";
+
+/* Class = "NSButtonCell"; title = "Sign in"; ObjectID = "lry-HM-r7n"; */
+"lry-HM-r7n.title" = "Войти";
+
+/* Class = "NSButtonCell"; title = "Filter by matches"; ObjectID = "mEQ-nG-Z6S"; */
+"mEQ-nG-Z6S.title" = "Фильтровать по совпадениям";

@@ -1,0 +1,6 @@
+
+/* Class = "NSWindow"; title = "Sign In"; ObjectID = "50"; */
+"50.title" = "Войти";
+
+/* Class = "NSButtonCell"; title = "Sign out"; ObjectID = "74"; */
+"74.title" = "Выйти";

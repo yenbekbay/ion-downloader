@@ -1,0 +1,6 @@
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Enter your query"; ObjectID = "8"; */
+"8.placeholderString" = "Введите свой запрос";
+
+/* Class = "NSTextFieldCell"; title = "Conecting..."; ObjectID = "sZR-Kc-qA6"; */
+"sZR-Kc-qA6.title" = "Подключаюсь...";

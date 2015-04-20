@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>24A50D2B-9C3A-4F20-B359-303C9543A742</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IonDownloader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>204803C16CD96F554CE484914157ED22F27B99C0</key>
+		<string>https://github.com/yenbekbay/vk-downloader.git</string>
+		<key>EFF43E6C605437EAEA064D0DB9E7B7F1CCB6FAE3</key>
+		<string>https://github.com/yenbekbay/ion-downloader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IonDownloader.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>204803C16CD96F554CE484914157ED22F27B99C0</key>
+		<string>../../..</string>
+		<key>EFF43E6C605437EAEA064D0DB9E7B7F1CCB6FAE3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yenbekbay/ion-downloader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EFF43E6C605437EAEA064D0DB9E7B7F1CCB6FAE3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>204803C16CD96F554CE484914157ED22F27B99C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EFF43E6C605437EAEA064D0DB9E7B7F1CCB6FAE3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ion-downloader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
