@@ -1,4 +1,4 @@
-# Ion Downloader
+# Ion Downloader [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/yenbekbay/ion-downloader/master/LICENSE)
 
 Mac OS X application-wrapper for vk-downloader script. Not finished, probably won't run without tweaking.
 
